@@ -1,0 +1,132 @@
+/* Styles généraux */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contenu principal */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Tableau de bord */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+/* Formulaires */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Notifications */
+.notification {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.btn-valider,
+.btn-refuser {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-valider {
+  background-color: #28a745;
+  color: white;
+  margin-right: 5px;
+}
+
+.btn-refuser {
+  background-color: #dc3545;
+  color: white;
+}
+
+.filtres {
+  margin-bottom: 20px;
+}
+
+.filtres label {
+  margin-right: 10px;
+}
+
+.filtres select,
+.filtres button {
+  padding: 5px;
+  margin-right: 10px;
+}
